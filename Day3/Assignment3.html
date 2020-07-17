@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        let result=  function (){
+            let getmark=Number(document.getElementById("mark").value);
+            //Conditional Statements
+
+            if(getmark>100 || getmark<0)
+            {
+                console.log(`Please enter a valid mark`);
+            }
+                else if(getmark>=90){
+                    console.log(`Marks are ${getmark} and Grade is S`);
+                }
+                else if(getmark>=80){
+                    console.log(`Marks are ${getmark} and Grade is A`);
+                }
+                else if(getmark>=70){
+                    console.log(`Marks are ${getmark} and Grade is B`);
+                }
+                else if(getmark>=60){
+                    console.log(`Marks are ${getmark} and Grade is C`);
+                }
+                else if(getmark>=50){
+                    console.log(`Marks are ${getmark} and Grade is D`);
+                }
+                else if(getmark>=40){
+                    console.log(`Marks are ${getmark} and Grade is E`);
+                }
+                else if(getmark>0){
+                    console.log(`Marks are ${getmark} and You are failed`);
+                }
+            else{
+                    console.log(`Please enter a valid mark`);
+                }
+
+            
+            
+
+            //Switch
+
+            let mark= parseInt(getmark/10) ;
+            switch (mark) 
+            {
+                case 10:
+                case 9:
+                    console.log(`Marks are ${getmark} and Grade is S`);
+                    break;
+                case 8:
+                    console.log(`Marks are ${getmark} and Grade is A`);
+                    break;
+                case 7:
+                    console.log(`Marks are ${getmark} and Grade is B`);
+                    break;
+                case 6:
+                    console.log(`Marks are ${getmark} and Grade is C`);
+                    break;
+                case 5:
+                    console.log(`Marks are ${getmark} and Grade is D`);
+                    break;
+                case 4:
+                    console.log(`Marks are ${getmark} and Grade is E`);
+                    break;
+                case 3:
+                case 2:
+                case 1:
+                case 0:
+                    console.log(`Marks are ${getmark} and You are failed`);
+                    break;
+                default:
+                console.log(`Please enter a Valid mark`);
+                    break;
+            }
+
+            //ternary
+
+            let score=  getmark>100 || getmark<0 ?`Please enter a valid mark`:
+                        getmark>=90 ? `Marks are ${getmark} and Grade is S`:
+                        getmark>=80 ? `Marks are ${getmark} and Grade is A`:
+                        getmark>=70 ? `Marks are ${getmark} and Grade is B`:
+                        getmark>=60 ? `Marks are ${getmark} and Grade is C`:
+                        getmark>=50 ? `Marks are ${getmark} and Grade is D`:
+                        getmark>=40 ? `Marks are ${getmark} and Grade is E`:
+                        getmark>0 ? `Marks are ${getmark} and You are failed`:
+                        `Please enter a valid mark`
+            console.log(score);
+                
+        }
+        
+
+    </script>
+</head>
+<body>
+    <h1>Javascript Assignment 3</h1>
+    <input id="mark" type="text"><br><br>
+    <button onclick="result()">Click me</button>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function func(){
+            let typephone=document.getElementById("phone").value;
+            let phoneModel=typephone.split(' ');
+            let android=phoneModel[0];
+            let version=phoneModel[1];
+            console.log(`The OS name is ${android} and version is ${version}`);
+        }
+        
+
+    </script>
+</head>
+<body>
+    <h1>Javascript Assignment 2</h1>
+    <h2>Enter the OS name and version seperated by a space</h2>
+    <input id="phone" type="text"><br><br>
+    <button onclick="func()">Click me</button>
+
+</body>
+</html>
