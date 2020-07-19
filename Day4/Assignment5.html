@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        let result= function(){
+        let n=parseFloat(document.getElementById("numbers").value);
+        if(n<=5000){
+            eq=(n/100)*2;
+            let ans=parseInt(eq);
+            console.log(`The total commission by him =${ans}`);
+            }
+        else if(n<=10000){
+            eq=(n/100)*5;
+            let ans=parseInt(eq);
+            console.log(`The total commission by him = ${ans}`);
+        }
+        else if(n<=20000){
+            eq=(n/100)*7;
+            let ans=parseInt(eq);
+            console.log(`The total commission by him = ${ans}`);
+        }
+        else{
+            eq=n/10;
+            let ans=parseInt(eq);
+            console.log(`The total commission by him = ${ans}`);
+        }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Javascript Assignment 6</h1>
+    <p>You are managing a sales department for your company, you want to reward your employees based on
+        the sales made by them during the year.</br>
+        The criteria is as follows:</br>
+        1. Sales from 0-5000 : 2%</br>
+        2. Sales from 5001 - 10000 : 5%</br>
+        3. Sales from 10001 - 20000 : 7%</br>
+        4. Above 20000 - 10%</br>
+        Then log the total commission earned by him.</br></br>
+        <input id="numbers" type="text"></br></br>
+    <button onclick="result()">Click here</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        let result= function(){
+        let n=parseFloat(document.getElementById("numbers").value);
+        for (let x=2; x<n ;x++){
+            let f=0;
+            for (let i=2; i<x;i++){
+                if (x%i==0){
+                    f=1;
+                    break;
+                }
+                }
+            if (f==0) {
+                console.log(x);
+            } 
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Javascript Assignment 7</h1>
+    <p>Write the code which outputs prime numbers in the interval from 2 to n.</p>
+    <input id="numbers" type="text"><br><br>
+    <button onclick="result()">Click here</button>
+</body>
+</html>
