@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function func(){
+            let getArr=document.getElementById("numbers").value;
+            let storeArr=getArr.split(' ');
+            console.log(storeArr);
+            let odd = storeArr.filter(el=>el%2!=0);
+            console.log(`The Odd nums are ${odd}`);
+            let cubes = [odd.map((el)=>el**3)];
+            console.log(cubes);
+        }
+    </script>
+</head>
+<body>
+    <h1>Javascript Assignment 1</h1>
+    <h4>Write a program which does the following things:</h4>
+    <ol>
+        <li>Takes a positive number from the user.</li> 
+        <li>Makes an array of numbers till the number given by user</li> 
+        <li>Use higher order function to filter the odd numbers</li>  
+        <li>Generate and array of the cubes of the filtered numbers</li>
+        
+    </ol>
+    <p>Enter numbers(odd and even nums) seperated by a space</p>
+    <input id="numbers" type="text"><br><br>
+    <button onclick="func()">Click me</button>
+ 
+</body>
+</html>
