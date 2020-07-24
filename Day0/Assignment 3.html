@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript </title>
+        <h2>Javascript Assignment 3</h2>
+        
+    </head>
+    <body>
+        <button onclick="document.write(formattedDate())">Print today date</button>
+        <script>
+            
+            function formattedDate()
+            {
+                var date= new Date();
+                var todayDate=date.getDate();
+                var month =date.getMonth()+1;
+                var year=date.getFullYear();
+                return (todayDate +"/"+ month+"/"+ year) + " OR " +  (todayDate +"-"+ month+"-"+ year)
+                
+            }
+        </script>
+    </body>
+</html>
