@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    
+</head>
+<body>
+    <h2>Javascript Assignment 2</h2>
+    <p>Write a program that will display the multiplication table of a number on the webpage in a proper
+    format.</p>
+    <p id="table"></p>
+    <script defer>
+        let tableNum=parseInt(prompt("Enter the num","1"));
+        let tableRange=parseInt(prompt("Enter the range","1"));
+        for(let i=1;i<=tableRange ; i++){
+                let total=tableNum*i;
+                document.write(`${tableNum} x ${i} = ${total} ${'<br/>'}`);
+            }
+
+    </script>
+    
+</body>
+</html>
